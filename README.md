@@ -1,6 +1,6 @@
 # Jupiter
 
-This is a Twitch-like full-stack project from Lai Offer.
+This is a Twitch-like full-stack project from LaiOffer.
 
 ## 01. Backend Environment
 - install Java 8 or higher
