@@ -19,3 +19,9 @@ This is a Twitch-like full-stack project from Lai Offer.
 - add basic Spring Framework
 - add basic Spring Configuration
 - Create MVC model
+- request mapping
+
+## 04. Spring Introduction
+- Learn IOC/DI
+- Create Class GameService
+- Learning basic annotation
