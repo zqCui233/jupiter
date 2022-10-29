@@ -27,8 +27,14 @@ This is a full-stack project based on Twitch APIs from LaiOffer.
 - Learning basic annotation
 
 ## 05. GameController Implementation
+- add dependency
 - Use Twitch APIs
 - modify Game Class to match Twitch response
 - create TwitchException and modify GameService Class 
 - update GameController Class
-- add dependency
+
+## 06. SearchController Implementation
+- update GameService Class to support search on stream/clip/video
+- add Class Item/ItemType to support search method
+- Implement search service methods
+- Test with Postman
