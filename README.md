@@ -1,6 +1,6 @@
 # Jupiter
 
-This is a Twitch-like full-stack project from LaiOffer.
+This is a full-stack project based on Twitch APIs from LaiOffer.
 
 ## 01. Backend Environment
 - install Java 8 or higher
@@ -22,6 +22,13 @@ This is a Twitch-like full-stack project from LaiOffer.
 - request mapping
 
 ## 04. Spring Introduction
-- Learn IOC/DI
+- Learn IoC/DI
 - Create Class GameService
 - Learning basic annotation
+
+## 05. GameController Implementation
+- Use Twitch APIs
+- modify Game Class to match Twitch response
+- create TwitchException and modify GameService Class 
+- update GameController Class
+- add dependency
