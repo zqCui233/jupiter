@@ -40,3 +40,15 @@ This is a full-stack project based on Twitch APIs from LaiOffer.
 - add Class Item/ItemType to support search method
 - Implement search service methods
 - Test with Postman
+
+### 07. Hibernate
+- add dependency
+- create Class User
+- map beans to rows using hibernate annotation
+- connect/create db on RDS
+
+### 08. Favorite Implementation
+- Create Dao layer and one dao impl
+- Use hibernate api
+- impl Favorite Service and Favorite Controller
+- test with postman
