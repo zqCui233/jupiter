@@ -1,16 +1,22 @@
 package com.laioffer.jupiter.entity.db;
 
-import com.fasterxml.jackson.annotation.JsonAlias;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.*;
 
+import javax.persistence.*;
 import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
 
+@Entity
+@Table(name = "items")
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class Item implements Serializable {
 
+    //https://www.baeldung.com/java-serial-version-uid
+    private static final long serialVersionUID = 1L;
+
+    @Id
     @JsonProperty("id")
     private String id;
 
@@ -20,18 +26,35 @@ public class Item implements Serializable {
     @JsonProperty("url")
     private String url;
 
+    @Column(name = "thumbnail_url")
     @JsonProperty("thumbnail_url")
     private String thumbnailUrl;
 
+    @Column(name = "broadcaster_name")
     @JsonProperty("broadcaster_name")
     @JsonAlias({ "user_name" })
     private String broadcasterName;
 
+    @Column(name = "game_id")
     @JsonProperty("game_id")
     private String gameId;
 
+    @Enumerated(value = EnumType.STRING)
     @JsonProperty("item_type")
     private ItemType type;
+
+    @JsonIgnore
+    @ManyToMany(mappedBy = "itemSet")
+    private Set<User> users= new HashSet<>();
+
+    public Set<User> getUsers() {
+        return users;
+    }
+
+    public void setUsers(Set<User> users) {
+        this.users = users;
+    }
+
 
     public String getId() {
         return id;
@@ -89,3 +112,4 @@ public class Item implements Serializable {
         this.type = type;
     }
 }
+
