@@ -52,3 +52,9 @@ This is a full-stack project based on Twitch APIs from LaiOffer.
 - Use hibernate api
 - impl Favorite Service and Favorite Controller
 - test with postman
+
+### 09. Authentication
+- Create session based authentication
+- Create register/login dao, service and controller
+- test with postman
+- union test with favorite implementation
