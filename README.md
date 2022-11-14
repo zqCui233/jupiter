@@ -58,3 +58,7 @@ This is a full-stack project based on Twitch APIs from LaiOffer.
 - Create register/login dao, service and controller
 - test with postman
 - union test with favorite implementation
+
+### 10. Recommendation
+- implement recommendation 
+- End of back-end
