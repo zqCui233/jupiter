@@ -26,7 +26,7 @@ public class ApplicationConfig {
     public DataSource dataSource() {
         String RDS_ENDPOINT = "jupiter-database.cx1llbdsmoon.us-east-1.rds.amazonaws.com";
         String USERNAME = "admin";
-        String PASSWORD = "Da6p6P43quSJhGW";
+        String PASSWORD = "qwerasdf";
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
         dataSource.setUrl("jdbc:mysql://" + RDS_ENDPOINT + ":3306/twitch?createDatabaseIfNotExist=true&serverTimezone=UTC");
@@ -35,7 +35,7 @@ public class ApplicationConfig {
 
         return dataSource;
     }
-
+s
     private final Properties hibernateProperties() {
         Properties hibernateProperties = new Properties();
         hibernateProperties.setProperty("hibernate.hbm2ddl.auto", "update");

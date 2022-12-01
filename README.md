@@ -62,3 +62,7 @@ This is a full-stack project based on Twitch APIs from LaiOffer.
 ### 10. Recommendation
 - implement recommendation 
 - End of back-end
+
+### 11. Deployment
+- Deploy on Amazon Web Service
+- Use docker
