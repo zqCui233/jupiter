@@ -35,7 +35,7 @@ public class ApplicationConfig {
 
         return dataSource;
     }
-s
+
     private final Properties hibernateProperties() {
         Properties hibernateProperties = new Properties();
         hibernateProperties.setProperty("hibernate.hbm2ddl.auto", "update");
